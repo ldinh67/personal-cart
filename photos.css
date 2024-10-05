@@ -1,92 +1,92 @@
 body {
-    background-color: white;
-  }
-  
-  h1, h2 {
-    text-align: center;
-    font-family: Georgia;
-    color: #0D52A1;
-  }
-  
-  h1 {
-    margin-top: 45px;
-    margin-bottom: 10px;
-    font-size: 45px;
-    font-weight: lighter;
-  }
-  
-  h2 {
-    margin-top: -5px;
-    margin-bottom: 40px;
-    font-size: 31px;
-    font-weight: lighter;
-  }
+  background-color: white;
+}
 
-  .home {
-    position: absolute;
-    margin-top: -130px;
-    margin-left: 35px;
-    width: 105px;
-    height: auto;
-  }
+h1, h2 {
+  text-align: center;
+  font-family: Georgia;
+  color: #0D52A1;
+}
 
-  .image-container {
-    position: relative;
-    width: 50%;
-    margin: 0 auto;
-  }
-  
-  .base-image {
-    display: block;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    width: 110%;
-    height: auto;
-  }
-  
-  .tech {
-    position: absolute;
-    top: 19%;
-    left: 38%;
-    width: 337px;
-    height: auto;
-    opacity: 100%;
-  }
-  
-  .cam {
-    position: absolute;
-    top: 44%;
-    left: 28%;
-    width: 210px;
-    height: auto;
-    opacity: 100%;
-    transform: rotate(0deg);
-  }
-  
-  .latte {
-    position: absolute;
-    top: 53%;
-    left: 15%;
-    width: 145px;
-    height: auto;
-    opacity: 100%;
-    transform: rotate(50deg);
-  }
-  
-  .pics {
-    position: absolute;
-    top: 17%;
-    left: 10%;
-    width: 330px;
-    height: auto;
-    opacity: 100%;
-    transform: rotate(0deg);
-  }
-  
-  a:hover {
-    opacity: 75%;
-  }
-  
-  a:active {
-    opacity: 65%;
-  }
+h1 {
+  margin-top: 70px;
+  margin-bottom: 10px;
+  font-size: 31px;
+  font-weight: lighter;
+}
+
+h2 {
+  margin-top: -5px;
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.image-container {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.home {
+  position: absolute;
+  margin-top: -130px;
+  margin-left: 35px;
+  width: 105px;
+  height: auto;
+}
+
+.base-image {
+  display: block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 110%;
+  height: auto;
+}
+
+.tech {
+  position: absolute;
+  top: 19%;
+  left: 38%;
+  width: 337px;
+  height: auto;
+  opacity: 100%;
+}
+
+.cam {
+  position: absolute;
+  top: 44%;
+  left: 28%;
+  width: 210px;
+  height: auto;
+  opacity: 100%;
+  transform: rotate(0deg);
+}
+
+.latte {
+  position: absolute;
+  top: 53%;
+  left: 15%;
+  width: 145px;
+  height: auto;
+  opacity: 100%;
+  transform: rotate(50deg);
+}
+
+.pics {
+  position: absolute;
+  top: 17%;
+  left: 10%;
+  width: 330px;
+  height: auto;
+  opacity: 100%;
+  transform: rotate(0deg);
+}
+
+a:hover {
+  opacity: 75%;
+}
+
+a:active {
+  opacity: 65%;
+}
