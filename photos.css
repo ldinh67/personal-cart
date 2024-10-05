@@ -21,7 +21,15 @@ body {
     font-size: 31px;
     font-weight: lighter;
   }
-  
+
+  .home {
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 35px;
+    width: 105px;
+    height: auto;
+  }
+
   .image-container {
     position: relative;
     width: 50%;
