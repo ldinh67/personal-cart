@@ -1,0 +1,355 @@
+/* --- GENERAL STYLES --- */
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Georgia, serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #0D52A1;
+  font-weight: lighter;
+}
+
+h1 {
+  margin-top: 45px;
+  margin-bottom: 10px;
+  font-size: 53px;
+}
+
+h2 {
+  margin-top: -5px;
+  margin-bottom: 60px;
+  font-size: 31px;
+}
+
+.drawing1 {
+  bottom: 0%; 
+  right: 75%;
+  position: absolute;
+  width: 400px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.drawing2 {
+  bottom: 17%; 
+  right: -5%;
+  position: absolute;
+  width: 450px;
+  transform: rotate(25%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.drawing3 {
+  bottom: 80%; 
+  right: 6%;
+  position: absolute;
+  width: 450px;
+  transform: rotate(25%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* --- HAMBURGER MENU STYLES --- */
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: url('images/dog-note.jpg') no-repeat center center/cover;
+  /* background: #fdf8e7; */
+  /* border: 2px solid #000; */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+  font-family: "Reenie Beanie", cursive;
+}
+
+.menu h2 {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 7px;
+  text-align: center;
+  margin-top: 50px; /* Moves just the "Menu" text lower */
+  margin-bottom: 15px; /* Adds spacing between "Menu" and the links */
+  display: block;
+}
+
+.menu a {
+  display: block;
+  padding: 12px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #0D52A1;
+  font-weight: bold;
+  border-bottom: 1px dashed #0D52A1;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.menu a:hover {
+  transform: rotate(-2deg) scale(1.1);
+  opacity: 0.8;
+}
+
+.menu.active {
+  left: 0;
+}
+
+/* --- TOOLTIP STYLING --- */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 120%; /* Positions above the image */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* --- CART & IMAGE CONTAINER --- */
+.image-container {
+  position: relative;
+  width: 800px; 
+  min-width: 700px; 
+  max-width: 800px; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-container a img {
+  position: absolute;
+}
+
+.image-container a img:hover {
+  transform: scale(1.05) translateY(-2px);
+  opacity: 0.75; 
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.base-image {
+  display: block;
+  width: 100%; 
+  height: auto;
+}
+
+/* --- UPDATED OBJECT PLACEMENT FOR BETTER BALANCE --- */
+.tech {
+  top: 19%;
+  left: 43%;
+  width: 350px;
+  transform: rotate(-8deg);
+  /* z-index: 2; */
+}
+
+.cam {
+  top: 55%;
+  left: 68%; 
+  width: 160px;
+  transform: rotate(-18deg);
+  z-index: 3;
+}
+
+.latte {
+  top: 55%;
+  left: 18%; 
+  width: 130px;
+  transform: rotate(70deg);
+  z-index: 3;
+}
+
+.neip-folder {
+  top: 20%;
+  left: 24%;
+  width: 190px;
+  transform: rotate(-12deg);
+  z-index: 3;
+}
+
+.notebook {
+  top: 44%;
+  left: 30%;
+  width: 200px;
+  transform: rotate(-10deg);
+  z-index: 1;
+}
+
+.lanyard {
+  top: 33%;
+  left: 22%;
+  width: 170px;
+  transform: rotate(60deg);
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
+  z-index: 4;
+}
+
+/* --- RESPONSIVENESS (Mobile Fixes) --- */
+@media (max-width: 768px) {
+  .image-container {
+    width: 85%;
+  }
+
+  .image-container a img {
+    width: 70px;
+  }
+
+  /* Adjusting object positions for better mobile spacing */
+  .tech { width: 220px; left: 32%; top: 28%; }
+  .cam { width: 140px; left: 16%; top: 50%; transform: rotate(-20deg); }
+  .latte { width: 110px; left: 8%; top: 60%; transform: rotate(20deg); }
+  .pics { width: 220px; left: 5%; top: 20%; transform: rotate(-5deg); }
+  .notebook { width: 150px; left: 44%; top: 68%; transform: rotate(-10deg); }
+  .lanyard { width: 130px; left: 55%; top: 12%; transform: rotate(28deg); }
+  .neip-folder { width: 170px; left: 50%; top: 45%; transform: rotate(-10deg); }
+}
+
+/* --- Floating Note Styles --- */
+#floating-note {
+  position: absolute;
+  top: 110px;
+  left: 1150px;
+  width: 300px; /* Adjust if needed */
+  cursor: grab;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotate(-4deg); /* Slight tilt */
+  transition: transform 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+#floating-note-instructions {
+  position: absolute;
+  cursor: grab;
+  z-index: 1000;
+  width: 180px;
+  top: 110px;
+  left: 197px;
+  transform: rotate(8deg); 
+}
+
+.note-image {
+  width: 120%;
+  display: block;
+  pointer-events: none;
+  /* box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.note-text {
+  position: absolute;
+  top: 16%;
+  /* left: 10%; */
+  width: 80%;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 22px;
+  color: #3a3a3a;
+  text-align: center;
+  pointer-events: none;
+}
+
+.note-text-instructions {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 80%;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 22px;
+  color: #3a3a3a;
+  text-align: center;
+  pointer-events: none;
+}
+
+/* CD Player Position */
+.cd-player-container {
+  position: fixed;
+  bottom: -20px;
+  right: 30px;
+  width: 150px; 
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CD Player */
+.cd-player {
+  width: 350px;
+  height: auto;
+}
+
+/* CD - Initially spinning */
+.cd {
+  position: absolute;
+  width: 85px;
+  height: auto;
+  bottom: 236px; /* Adjust positioning */
+  right: 37px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Spinning Animation */
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.spinning {
+  animation: spin 3s linear infinite;
+}
+
+/* Hidden Song Info */
+.song-info {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 20px;
+  text-align: center;
+  color: #0D52A1;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 150px;
+  bottom: 80px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.song-info.visible {
+  opacity: 1;
+}
+
+.sticker {
+  top: 85%; 
+  right: 1%;
+  position: absolute;
+  width: 90px; /* Adjust size as needed */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
