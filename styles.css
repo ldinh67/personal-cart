@@ -56,6 +56,17 @@ h2 {
   z-index: 1000;
 }
 
+.drawing3 {
+  bottom: 20%; 
+  right: 6%;
+  position: absolute;
+  width: 450px;
+  transform: rotate(25%);
+  /* transition: transform 0.3s ease, opacity 0.3s ease; */
+  transition: transform 0.2s ease-in-out;
+  z-index: 1000;
+}
+
 /* --- HAMBURGER MENU STYLES --- */
 .menu-icon {
   position: absolute;
