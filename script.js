@@ -47,6 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Apply dragging to both notes
     makeDraggable("floating-note");
     makeDraggable("floating-note-instructions");
+    makeDraggable("drawing1");
+    makeDraggable("drawing2");
+    makeDraggable("drawing3");
 
     // --- Spinning CD Logic ---
     const cd = document.querySelector(".cd");
@@ -69,5 +72,5 @@ document.addEventListener("DOMContentLoaded", function () {
     // Force CD spinning animation on load
     cd.classList.add("spinning");
 
-    
+
 });
