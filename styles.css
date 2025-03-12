@@ -56,14 +56,47 @@ h2 {
   z-index: 1000;
 }
 
-.drawing3 {
+/* .drawing4 {
   bottom: 20%; 
   right: 6%;
   position: absolute;
   width: 450px;
   transform: rotate(25%);
+  transition: transform 0.2s ease-in-out;
+  z-index: 1000;
+} */
+
+.drawing5 {
+  bottom: 0%; 
+  right: 70%;
+  position: absolute;
+  width: 200px;
+  /* transform: rotate(25%); */
   /* transition: transform 0.3s ease, opacity 0.3s ease; */
   transition: transform 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+.drawing6 {
+  bottom: 0%; 
+  right: 6%;
+  position: absolute;
+  width: 325px;
+  transform: rotate(25%);
+  /* transition: transform 0.3s ease, opacity 0.3s ease; */
+  transition: transform 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+.drawing7 {
+  bottom: 75%; 
+  right: 46%;
+  position: absolute;
+  width: 150px;
+  transform: rotate(25%);
+  /* transition: transform 0.3s ease, opacity 0.3s ease; */
+  transition: transform 0.2s ease-in-out;
+  flip
   z-index: 1000;
 }
 
