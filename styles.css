@@ -5,6 +5,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  background-image: url('./images/gingham.jpg');
 }
 
 h1, h2 {
@@ -88,17 +89,17 @@ h2 {
   z-index: 1000;
 }
 
-.drawing7 {
+/* .drawing7 {
   bottom: 75%; 
   right: 46%;
   position: absolute;
   width: 150px;
   transform: rotate(25%);
   /* transition: transform 0.3s ease, opacity 0.3s ease; */
-  transition: transform 0.2s ease-in-out;
-  flip
-  z-index: 1000;
-}
+  /* transition: transform 0.2s ease-in-out;
+  flip */
+  /* z-index: 1000; */
+/* } */ 
 
 /* --- HAMBURGER MENU STYLES --- */
 .menu-icon {
