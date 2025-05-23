@@ -102,7 +102,7 @@ h2 {
 /* z-index: 1000; */
 /* } */
 
-/* --- HAMBURGER MENU STYLES --- */
+/* --- SIDE MENU --- */
 .menu-icon {
   position: absolute;
   top: 20px;
@@ -213,7 +213,7 @@ h2 {
   height: auto;
 }
 
-/* --- UPDATED OBJECT PLACEMENT FOR BETTER BALANCE --- */
+/* --- OBJECT IN THE CART --- */
 .tech {
   top: 19%;
   left: 43%;
@@ -323,7 +323,7 @@ h2 {
   }
 }
 
-/* --- Floating Note Styles --- */
+/* --- FLOATING NOTES --- */
 #floating-note {
   position: absolute;
   top: 110px;
@@ -382,7 +382,7 @@ h2 {
   pointer-events: none;
 }
 
-/* CD Player Position */
+/* --- CD PLAYER --- */
 .cd-player-container {
   position: fixed;
   bottom: -20px;
@@ -394,24 +394,20 @@ h2 {
   align-items: center;
 }
 
-/* CD Player */
 .cd-player {
   width: 350px;
   height: auto;
 }
 
-/* CD - Initially spinning */
 .cd {
   position: absolute;
   width: 85px;
   height: auto;
   bottom: 236px;
-  /* Adjust positioning */
   right: 37px;
   transition: transform 0.5s ease-in-out;
 }
 
-/* Spinning Animation */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -426,7 +422,6 @@ h2 {
   animation: spin 3s linear infinite;
 }
 
-/* Hidden Song Info */
 .song-info {
   font-family: "Reenie Beanie", cursive;
   font-size: 20px;
@@ -451,6 +446,5 @@ h2 {
   right: 1%;
   position: absolute;
   width: 90px;
-  /* Adjust size as needed */
   transition: transform 0.3s ease, opacity 0.3s ease;
 }

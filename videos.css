@@ -20,7 +20,7 @@ h2 {
 
 .base-image {
     display: block;
-    z-index: 2; /* Places the camera image above the video */
+    z-index: 2;
     margin-left: 50%;
     transform: translateX(-50%);
     width: 130%;
@@ -43,7 +43,7 @@ h2 {
     width: 468px;
     height: 350px;
     opacity: 100%;
-    z-index: 1; /* Places the video behind the camera */
+    z-index: 1;
 }
 
 .home {
@@ -56,9 +56,9 @@ h2 {
 
 a:hover {
     opacity: 75%;
-    cursor:w-resize;
+    cursor: w-resize;
 }
-  
+
 a:active {
     opacity: 65%;
 }
