@@ -8,7 +8,8 @@ body {
   background-image: url('./images/gingham.jpg');
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #0D52A1;
   font-weight: lighter;
 }
@@ -26,7 +27,7 @@ h2 {
 }
 
 .drawing1 {
-  bottom: 0%; 
+  bottom: 0%;
   right: 75%;
   position: absolute;
   width: 400px;
@@ -36,7 +37,7 @@ h2 {
 }
 
 .drawing2 {
-  bottom: 17%; 
+  bottom: 17%;
   right: -5%;
   position: absolute;
   width: 450px;
@@ -47,7 +48,7 @@ h2 {
 }
 
 .drawing3 {
-  bottom: 80%; 
+  bottom: 80%;
   right: 6%;
   position: absolute;
   width: 450px;
@@ -68,7 +69,7 @@ h2 {
 } */
 
 .drawing5 {
-  bottom: 0%; 
+  bottom: 0%;
   right: 70%;
   position: absolute;
   width: 200px;
@@ -79,7 +80,7 @@ h2 {
 }
 
 .drawing6 {
-  bottom: 0%; 
+  bottom: 0%;
   right: 6%;
   position: absolute;
   width: 325px;
@@ -96,10 +97,10 @@ h2 {
   width: 150px;
   transform: rotate(25%);
   /* transition: transform 0.3s ease, opacity 0.3s ease; */
-  /* transition: transform 0.2s ease-in-out;
+/* transition: transform 0.2s ease-in-out;
   flip */
-  /* z-index: 1000; */
-/* } */ 
+/* z-index: 1000; */
+/* } */
 
 /* --- HAMBURGER MENU STYLES --- */
 .menu-icon {
@@ -130,8 +131,10 @@ h2 {
   font-family: 'Reenie Beanie', cursive;
   font-size: 7px;
   text-align: center;
-  margin-top: 50px; /* Moves just the "Menu" text lower */
-  margin-bottom: 15px; /* Adds spacing between "Menu" and the links */
+  margin-top: 50px;
+  /* Moves just the "Menu" text lower */
+  margin-bottom: 15px;
+  /* Adds spacing between "Menu" and the links */
   display: block;
 }
 
@@ -170,7 +173,8 @@ h2 {
   padding: 6px 8px;
   border-radius: 5px;
   position: absolute;
-  bottom: 120%; /* Positions above the image */
+  bottom: 120%;
+  /* Positions above the image */
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
@@ -182,14 +186,15 @@ h2 {
 /* --- CART & IMAGE CONTAINER --- */
 .image-container {
   position: relative;
-  width: 800px; 
-  min-width: 700px; 
-  max-width: 800px; 
+  width: 800px;
+  min-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  z-index: 10;
 }
 
 .image-container a img {
@@ -198,13 +203,13 @@ h2 {
 
 .image-container a img:hover {
   transform: scale(1.05) translateY(-2px);
-  opacity: 0.75; 
+  opacity: 0.75;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .base-image {
   display: block;
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
@@ -219,7 +224,7 @@ h2 {
 
 .cam {
   top: 55%;
-  left: 68%; 
+  left: 68%;
   width: 160px;
   transform: rotate(-18deg);
   z-index: 3;
@@ -227,7 +232,7 @@ h2 {
 
 .latte {
   top: 55%;
-  left: 18%; 
+  left: 18%;
   width: 130px;
   transform: rotate(70deg);
   z-index: 3;
@@ -269,13 +274,53 @@ h2 {
   }
 
   /* Adjusting object positions for better mobile spacing */
-  .tech { width: 220px; left: 32%; top: 28%; }
-  .cam { width: 140px; left: 16%; top: 50%; transform: rotate(-20deg); }
-  .latte { width: 110px; left: 8%; top: 60%; transform: rotate(20deg); }
-  .pics { width: 220px; left: 5%; top: 20%; transform: rotate(-5deg); }
-  .notebook { width: 150px; left: 44%; top: 68%; transform: rotate(-10deg); }
-  .lanyard { width: 130px; left: 55%; top: 12%; transform: rotate(28deg); }
-  .neip-folder { width: 170px; left: 50%; top: 45%; transform: rotate(-10deg); }
+  .tech {
+    width: 220px;
+    left: 32%;
+    top: 28%;
+  }
+
+  .cam {
+    width: 140px;
+    left: 16%;
+    top: 50%;
+    transform: rotate(-20deg);
+  }
+
+  .latte {
+    width: 110px;
+    left: 8%;
+    top: 60%;
+    transform: rotate(20deg);
+  }
+
+  .pics {
+    width: 220px;
+    left: 5%;
+    top: 20%;
+    transform: rotate(-5deg);
+  }
+
+  .notebook {
+    width: 150px;
+    left: 44%;
+    top: 68%;
+    transform: rotate(-10deg);
+  }
+
+  .lanyard {
+    width: 130px;
+    left: 55%;
+    top: 12%;
+    transform: rotate(28deg);
+  }
+
+  .neip-folder {
+    width: 170px;
+    left: 50%;
+    top: 45%;
+    transform: rotate(-10deg);
+  }
 }
 
 /* --- Floating Note Styles --- */
@@ -283,13 +328,15 @@ h2 {
   position: absolute;
   top: 110px;
   left: 1150px;
-  width: 300px; /* Adjust if needed */
+  width: 300px;
+  /* Adjust if needed */
   cursor: grab;
   user-select: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: rotate(-4deg); /* Slight tilt */
+  transform: rotate(-4deg);
+  /* Slight tilt */
   transition: transform 0.2s ease-in-out;
   z-index: 1000;
 }
@@ -301,7 +348,7 @@ h2 {
   width: 180px;
   top: 110px;
   left: 197px;
-  transform: rotate(8deg); 
+  transform: rotate(8deg);
 }
 
 .note-image {
@@ -340,7 +387,7 @@ h2 {
   position: fixed;
   bottom: -20px;
   right: 30px;
-  width: 150px; 
+  width: 150px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -358,7 +405,8 @@ h2 {
   position: absolute;
   width: 85px;
   height: auto;
-  bottom: 236px; /* Adjust positioning */
+  bottom: 236px;
+  /* Adjust positioning */
   right: 37px;
   transition: transform 0.5s ease-in-out;
 }
@@ -366,10 +414,11 @@ h2 {
 /* Spinning Animation */
 @keyframes spin {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -398,9 +447,10 @@ h2 {
 }
 
 .sticker {
-  top: 85%; 
+  top: 85%;
   right: 1%;
   position: absolute;
-  width: 90px; /* Adjust size as needed */
+  width: 90px;
+  /* Adjust size as needed */
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
