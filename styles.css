@@ -5,7 +5,8 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  /* background-image: url('./images/gingham.jpg'); */
+  background-image: url('./images/gingham.jpg');
+  
 }
 
 h1,
